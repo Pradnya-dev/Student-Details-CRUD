@@ -1,0 +1,40 @@
+<form [formGroup]="myForm" (ngSubmit)="formAction()">
+<h1 mat-dialog-title>{{inputData.title}}</h1>
+<div mat-dialog-content class="student-form">
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+
+  <div class="gender-container">
+    <mat-label>Gender: </mat-label>
+    <mat-radio-group aria-label="Select an option" formControlName="gender">
+      <mat-radio-button value="Female">Female</mat-radio-button>
+      &nbsp;
+      <mat-radio-button value="Male">Male</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Class</mat-label>
+    <input matInput formControlName="class">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Grade</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="grade" formControlName="grade"> 
+      <mat-option *ngFor="let grade of gradeList" [value]="grade">{{ grade }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</div>
+<div mat-dialog-actions>
+  <a (click)="cancelForm()" mat-raised-button color="warn">Close</a>
+  <button mat-raised-button color="primary" [disabled]="myForm.invalid">Submit</button>
+</div>
+</form>

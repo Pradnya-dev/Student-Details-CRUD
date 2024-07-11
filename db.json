@@ -1,0 +1,36 @@
+{
+  "students": [
+    {
+      "id": 2,
+      "name": "Emily",
+      "email": "emily@gmailom",
+      "gender": "Female",
+      "grade": "A+",
+      "class": 10
+    },
+    {
+      "id": 3,
+      "name": "Emma",
+      "gender": "Female",
+      "class": 10,
+      "grade": "A+",
+      "email": "emma@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Bob",
+      "gender": "Male",
+      "class": 10,
+      "grade": "A+",
+      "email": "bob@gmail.com"
+    },
+    {
+      "id": 8,
+      "name": "John1",
+      "email": "john@gmail.com",
+      "gender": "Male",
+      "grade": "A+",
+      "class": "13"
+    }
+  ]
+}
