@@ -19,14 +19,14 @@
     {
       "id": 4,
       "name": "Bob",
+      "email": "bob@gmail.com",
       "gender": "Male",
-      "class": 10,
-      "grade": "A+",
-      "email": "bob@gmail.com"
+      "grade": "A",
+      "class": "10"
     },
     {
       "id": 8,
-      "name": "John1",
+      "name": "John",
       "email": "john@gmail.com",
       "gender": "Male",
       "grade": "A+",

@@ -3,7 +3,7 @@
   <h4>Iauro Student Details Assignment</h4>
   <button mat-raised-button color="primary" (click)="AddStudentDetail()">Add Student</button>
 </div>
-  
+  <div class="table-container">
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef>Name</th>
@@ -43,4 +43,6 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
   </table>
+      
+</div>
 </div>

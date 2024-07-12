@@ -29,12 +29,12 @@ export class StudentFormComponent implements OnInit {
   }
 
   myForm = this.builder.group({
-    id: this.builder.control('').addValidators(Validators.required),
-    name: this.builder.control('').addValidators(Validators.required),
-    email: this.builder.control('').addValidators([Validators.required, Validators.email]),
-    gender: this.builder.control('').addValidators(Validators.required),
-    grade: this.builder.control('').addValidators(Validators.required),
-    class: this.builder.control('').addValidators(Validators.required),
+    id: this.builder.control(''),
+    name: this.builder.control('', Validators.required),
+    email: this.builder.control('', [Validators.required, Validators.email]),
+    gender: this.builder.control('', Validators.required),
+    grade: this.builder.control('', Validators.required),
+    class: this.builder.control('', Validators.required),
   });
 
   formAction() {
